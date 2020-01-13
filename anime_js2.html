@@ -1,0 +1,45 @@
+<script>
+    $(function(){
+        var $timeline_block = $('.cd-timeline-block');
+        //hide timeline blocks which are outside the viewport
+        $timeline_block.each(function(){
+            if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+                $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+            }
+        });
+        //on scolling, show/animate timeline blocks when enter the viewport
+        $(window).on('scroll', function(){
+            $timeline_block.each(function(){
+                if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+                    $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+                }
+            });
+        });
+    });
+    $(document).ready(function(){
+        $(".sf-anima-box").click(function(){
+            var index = $(".sf-anima-box").index(this);
+            $(".sf-anima-comment").slideUp('fast');
+            var display = $(".sf-anima-comment").eq(index).css('display');
+            if(display == "none"){
+                $(".sf-anima-comment").eq(index).slideDown('slow');
+            }
+        });
+        $("#open-form").click(function(){
+            $("#open-form").fadeOut()
+            $("#form").slideDown('slow');
+        });
+        $("#close-form").click(function(){
+            $("#form").slideUp('fast');
+            $("#open-form").fadeIn()
+        });
+    });
+
+    var l = $('.sf-anima-intro').length;
+    for(var i = 0;i<l;i++){
+        var intro = $('.sf-anima-intro').eq(i).html();
+        var comment = $('.sf-anima-comment').eq(i).html();
+        $('.sf-anima-intro').eq(i).html(intro.replace(/[\n\r]/g,'<br>'));
+        $('.sf-anima-comment').eq(i).html(comment.replace(/[\n\r]/g,'<br>'));
+    }
+    </script>

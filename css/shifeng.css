@@ -1,0 +1,120 @@
+
+.sf-point{
+	width: 30px;      
+	height: 30px;      
+	border-radius: 60px;      
+	background-color: white;      
+	opacity: 0.7;
+	margin: 5px auto;
+	cursor: pointer;
+}
+.sf-close-point{
+	float: right;
+	width: 20px;      
+	height: 20px;      
+	border-radius: 40px;  
+	background-color: #87CEFA;
+	cursor: pointer;
+	opacity: 0.7;
+}
+#form{
+	display: none;
+}
+.sf-form-out-box{
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.sf-form-box{
+	background-color: white;
+	opacity: 0.7;
+	height: 300px;
+	width: 100%;
+	padding: 10px 10px;
+}
+.sf-left-box{
+	float: left;
+	font-size: 15px;
+	width: 70%;
+}
+.sf-right-box{
+	float: left;
+	font-size: 15px;
+	width: 28%;
+}
+.sf-input-width40{
+	border: 1px #999 solid;
+	width: 40%;
+	margin: 0 10px;
+}
+.sf-input-width60{
+	border: 1px #999 solid;
+	width: 60%;
+	margin: 0 10px;
+}
+.sf-input-width20{
+	border: 1px #999 solid;
+	width: 20%;
+	margin: 0 10px;
+}
+.sf-margin-five{
+	margin-top: 5px;
+}
+.sf-margin-three{
+	margin-top: 3px;
+}
+.sf-left-textarea{
+	border: 1px #999 solid;
+	width: 90%;
+	height:200px;
+	resize:none;
+}
+.sf-right-textarea{
+	border: 1px #999 solid;
+	width: 97%;
+	height:200px;
+	resize:none;
+}
+.sf-button{
+	font-size: 18px;
+	background-color: #87CEFA;
+	color: white;
+	width: 25%;
+	float: right;
+	margin-right: 3%;
+}
+
+
+
+.sf-anima-box{
+	min-height: 300px!important;
+}
+.sf-anima-img-box{
+	float: left!important;
+}
+.sf-anima-img{
+	width: 200px!important;
+	height: 300px!important;
+}
+.sf-anima-intro-box{
+	padding-top: 50px!important;
+	padding-left: 230px!important;
+	font-size: 20px!important;
+	min-height: 300px!important;
+	cursor: pointer;
+}
+.sf-anima-name-jp{
+	font-size: 14px!important;
+}
+.sf-anima-br{
+	margin: 1em!important;
+}
+.sf-anima-intro{
+	margin: 3px 0!important;
+	font-size: 16px!important;
+}
+.sf-anima-comment{
+	margin-left: 10px!important;
+	font-size: 16px;
+	display: none;
+}
